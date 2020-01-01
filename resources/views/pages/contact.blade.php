@@ -30,7 +30,7 @@
                                 <div class="contact-info">
                                     <h3>QUICK CONTACT</h3>
                                     <ul>
-                                        <li><span>Phone:</span> <a href="#">+012456879</a>, <a href="#">+012456878</a></li>
+                                        <li><span>Telefon:</span> <a href="#">+012456879</a>, <a href="#">+012456878</a></li>
                                         <li><span>Email:</span> <a href="#">info@example.com</a>, <a href="#">contact@example.com</a></li>
                                         <li><span>Location:</span> 2020 Willshire Glen, Alpharetta, GA-30009</li>
                                     </ul>
