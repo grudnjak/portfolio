@@ -13,14 +13,14 @@
                                     <li><a href="/">HOME</a>
                                     </li>
                                     <li>
-                                            <a href="/portfolio">PORTFOLIO </a>
+                                            <a href="/galerija">GALERIJA </a>
                                         
                                         </li>
                                         <li>
-                                            <a href="/about">ABOUT</a>
+                                            <a href="/about">O MENI</a>
                                         </li>
                                         <li>
-                                            <a href="/contact">CONTACT</a>
+                                            <a href="/contact">KONTAKT</a>
                                         </li>
                                 </ul>
                             </nav>
@@ -61,14 +61,14 @@
                                 <li><a href="/">HOME</a>
                                 </li>
                                 <li>
-                                        <a href="/portfolio">PORTFOLIO </a>
+                                        <a href="/galerija">GALERIJA </a>
                                     
                                     </li>
                                     <li>
-                                        <a href="/about">ABOUT</a>
+                                        <a href="/about">O MENI</a>
                                     </li>
                                     <li>
-                                        <a href="/contact">CONTACT</a>
+                                        <a href="/contact">KONTAKT</a>
                                     </li>
                         </ul>
                     </nav>

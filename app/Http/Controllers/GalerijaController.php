@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Category;
 use App\Galerija;
 use Illuminate\Http\Request;
 
@@ -9,7 +10,7 @@ class GalerijaController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth',['except'=>['index','show',]]);
     }
     /**
      * Display a listing of the resource.
@@ -18,7 +19,7 @@ class GalerijaController extends Controller
      */
     public function index()
     {
-        $slike = Galerija::orderBy('created_at','desc')->limit(12)->get();
+        $slike = Galerija::orderBy('created_at','desc')->get();
         return view('galerija.index')->with('slike',$slike);
     }
 
@@ -29,7 +30,8 @@ class GalerijaController extends Controller
      */
     public function create()
     {
-        return view('galerija.create');
+        $items = Category::pluck('title', 'id');
+        return view('galerija.create')->with('items', $items );
     }
 
     /**
@@ -45,6 +47,7 @@ class GalerijaController extends Controller
             'cover_image' => 'image|nullable|max:1999',
             'body' => 'required',
             'title' => 'required',
+            'category_id'=>'required',
         ]);
         //Handle File Upload     
         if($request->hasFile('cover_image')){
@@ -75,6 +78,8 @@ class GalerijaController extends Controller
               $galerija->cover_image= $fileNameToStore;
               $galerija->title = $request->input('title')  ;
               $galerija->body = $request->input('body')  ;
+              $galerija->category_id = $request->input('category_id')  ;
+
               $galerija->save();
               return redirect('/galerija')->with('success','Slika dodana');
             }
@@ -101,10 +106,7 @@ class GalerijaController extends Controller
     public function edit($id)
     {
         $galerija = Galerija::find($id);
-        //check for correct user
-        if(auth()->user()->id !== $galerija->user_id ){
-            return redirect('/galerija ')->with('error', 'Unautharize page' );
-        }
+       
         
             return view('galerija.edit')->with('galerija', $galerija );
     }
@@ -120,8 +122,9 @@ class GalerijaController extends Controller
     {
        
         $this->validate($request, [
-            'cover_image' => 'required',
-           
+            'cover_image' ,
+            'body' => 'required',
+            'title' => 'required',
         ]);
           
             //Handle File Upload
@@ -142,7 +145,10 @@ $path = $request->file('cover_image')->storeAs('public/cover_images/',$fileNameT
               $galerija = Galerija::find($id);
               if($request->hasFile('cover_image')){
                 $galerija->cover_image = $fileNameToStore;
+
               }
+              $galerija->title = $request->input('title')  ;
+              $galerija->body = $request->input('body')  ;
               $galerija->save();
               return redirect('/galerija')->with('success','Galerija Updated ');
     }

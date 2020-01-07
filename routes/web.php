@@ -16,6 +16,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'PageController@index') ;
 Route::get('/about', 'PageController@about');
-Route::get('/portfolio', 'PageController@portfolio');
 Route::get('/contact', 'PageController@contact');
 Route::resource('galerija', 'GalerijaController'); 

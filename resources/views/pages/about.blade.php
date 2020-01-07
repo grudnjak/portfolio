@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="content-body bg-grey section custom-scroll">
+<div class="content-body bg-white section custom-scroll">
         <div class="section-wrap section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-90 pb-lg-50 pb-md-50 pb-sm-50 pb-xs-20">
             <div class="container">
                 
@@ -15,7 +15,7 @@
                             <img src="/images/portrait.jpg" alt="">
                             <div class="team-content">
                                 <h4>VALENTIN GRUDNIK</h4>
-                                <span>Photographer<br>Graphic Designer<br>Coder</span>
+                                <span>FOTOGRAFER<br>GRAFIČNI OBLIKOVALEC<br>PROGRAMER</span>
                             
                                 <div class="team-social">
                                     <a href="#"><i class="fa fa-facebook"></i></a>
@@ -28,15 +28,15 @@
                     <!-- Team Item -->
                    <!-- About Content -->
                    <div class="about-content col-lg-6 col-12">
-                        <h3 class="block-title">ABOUT ME</h3>
+                        <h3 class="block-title">O MENI</h3>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour lebmid by injected humour lebmid.</p>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered lebmid by injected.</p>
                         
                         <!-- Personal Info -->
                         <ul class="personal-info">
-                            <li><span>Phone:</span>+386 41 675 682</li>
-                            <li><span>Frelance:</span>Available</li>
-                            <li><span>Language:</span>English, Slovenian</li>
+                            <li><span>Telefon:</span>+386 41 675 682</li>
+                            <li><span>E-pošta:</span></li>
+                            <li><span>Jeziki:</span>Slovenščina, Angleščina</li>
                         </ul>
                     
 
