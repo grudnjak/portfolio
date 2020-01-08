@@ -23,14 +23,7 @@
                     <p>{{$galerija->body}}</p>
                     
                    
-                    <!-- Project Share -->
-                    <div class="project-share">
-                        <span>Share:</span>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                        <a href="#"><i class="fa fa-google-plus"></i></a>
-                    </div>
+                  
                     
                    
                     

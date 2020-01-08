@@ -17,11 +17,21 @@
                                         
                                         </li>
                                         <li>
+                                                <a href="/services">PROJEKTI</a>
+                                        </li>
+                                        <li>
                                             <a href="/about">O MENI</a>
                                         </li>
                                         <li>
                                             <a href="/contact">KONTAKT</a>
                                         </li>
+                                       
+                                        @if(!Auth::guest())
+                                        <li>
+                                            <a href="/home">DASHBOARD</a>
+                                        </li>
+
+                                        @endif
                                 </ul>
                             </nav>
                         </div>
@@ -51,7 +61,7 @@
                 <button class="side-header-close d-block d-lg-none"><span></span></button>
                 <!-- Side Header Logo Start -->
                 <div class="side-header-logo pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50">
-                    <a href="/"><img src="/images/logo.png" alt=""><img src="/images/light-logo.png" class="light-logo" alt=""></a>
+                    <a href="/"><img src="/images/logo.png" alt=""><img src="/images/logo.png" class="light-logo" alt=""></a>
                 </div><!-- Side Header Logo End -->
                 
                 <!-- Side Header Logo Start -->
@@ -70,6 +80,12 @@
                                     <li>
                                         <a href="/contact">KONTAKT</a>
                                     </li>
+                                    @if(!Auth::guest())
+                                        <li>
+                                            <a href="/home">DASHBOARD</a>
+                                        </li>
+
+                                        @endif
                         </ul>
                     </nav>
                 </div><!-- Side Header Menu End -->
@@ -85,7 +101,7 @@
                     
                     <!-- Side Header Social -->
                     <div class="side-header-social">
-                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/valentingrudnik/"><i class="fa fa-instagram"></i></a>
                     </div>
                     
                     <!-- Side Header Copyright -->

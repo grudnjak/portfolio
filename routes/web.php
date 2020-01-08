@@ -16,5 +16,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/', 'PageController@index') ;
 Route::get('/about', 'PageController@about');
-Route::get('/contact', 'PageController@contact');
+Route::get('/services', 'PageController@services');
 Route::resource('galerija', 'GalerijaController'); 
+//mail
+Route::get('/contact', ['uses'=>'ContactUSController@contactUS']);
+Route::post('/contact', ['uses'=>'ContactUSController@contactUSPost','as'=>'contactus.store']);
+Route::get('/povprasevanja', ['uses'=>'ContactUSController@index']);

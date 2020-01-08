@@ -1,26 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div id="wrapper">
-        <!--content -->	
-        <div class="content full-height">
-            
-<div class="container">
-    <div class="row justify-content-center">
 
-            
-            <section id="sec3">
-                    <div class="container small-container">
-                        <div class="section-title fl-wrap">
-                            <h3>LOGIN</h3>
-                            <h4>"Confidance over ability"</h4>
-                            
-                        </div>
-                        <div class="column-wrapper_item fl-wrap">
-                            <div class="column-wrapper_text fl-wrap">
-                                <div id="contact-form" class="fl-wrap">
-                                    <div id="message"></div>
-                                        <form  class="custom-form" method="POST" action="{{ route('login') }}">
+
+
+        <div class="content-body bg-grey section custom-scroll">
+       
+            <div class="section-wrap section pt-120 pt-lg-80 pt-md-80 pt-sm-80 pt-xs-50 pb-120 pb-lg-80 pb-md-80 pb-sm-80 pb-xs-50">
+                <div class="container">
+                       
+                    <div class="row">
+
+                            <div  style="float:none;margin:auto;" class="col-lg-5 col-md-6 col-12 mb-30">
+                                    <h1>Login</h1><br>
+                                <div class="contact-form">
+                                   
+                                        <form  method="POST" action="{{ route('login') }}">
                                             @csrf
                                             <fieldset>
                                             <input id="email" placeholder="Your E-mail *" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
@@ -38,7 +33,7 @@
                                                 </span>
                                             @enderror
                                         
-                                            <button type="submit" class="btn btn-primary">
+                                            <button type="submit" class="btn btn-dark ">
                                                     {{ __('Login') }}
                                                 </button>
                                    
@@ -47,12 +42,12 @@
                                         </form>
                                 </div>
                             </div>
+                            </div>
                         </div>
                     </div>
-                </section>
+                
 
        
 </div>
-        </div>
-</div>
 @endsection
+

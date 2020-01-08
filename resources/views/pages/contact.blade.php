@@ -8,53 +8,35 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-6 col-12 mb-sm-45 mb-xs-45">
+                    <div class="col-lg-12 col-12 mb-sm-45 mb-xs-45">
                         <div class="row">
 
                             <!-- Contact Form -->
-                            <div class="col-lg-10 col-12 mb-45">
+                            <div class="col-lg-12 col-12 mb-45">
                                 <div class="contact-form">
-                                    <h3>CONTACT FORM</h3>
-                                    <form id="contact-form" action="assets/php/mail.php" method="post">
-                                        <input type="text" name="name" placeholder="Name">
-                                        <input type="email" name="email" placeholder="Email">
-                                        <textarea name="message" placeholder="Message"></textarea>
-                                        <input type="submit" value="Send">
-                                    </form>
+                                    <h3>KONTAKTNI OBRAZEC</h3>
+                                    <form id="contact-form" method="POST" action="{{route('contactus.store')}}">
+                                            {{csrf_field() }}
+                                        <input type="text"  name="name" class="form-control" id="name" placeholder="Ime in Priimek" required>
+                                        <input type="email"  name="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                        <textarea class="form-control" id="body" rowss="5" required name="body"></textarea>
+                                        <input type="submit" class="btn btn-big gold" value="Pošlji">
+                                  
+                                    {!! Form::close() !!}
                                     <p class="form-messege"></p>
                                 </div>
                             </div>
 
                             <!-- Contact Info -->
-                            <div class="col-lg-10 col-12">
+                            <div class="col-lg-12 col-12">
                                 <div class="contact-info">
-                                    <h3>QUICK CONTACT</h3>
+                                    <h3>KONTAKT</h3>
                                     <ul>
-                                        <li><span>Telefon:</span> <a href="#">+012456879</a>, <a href="#">+012456878</a></li>
-                                        <li><span>Email:</span> <a href="#">info@example.com</a>, <a href="#">contact@example.com</a></li>
-                                        <li><span>Location:</span> 2020 Willshire Glen, Alpharetta, GA-30009</li>
+                                        <li><span>Telefon:</span> <a href="#">+386 41 675 682</a></li>
+                                        <li><span>Email:</span> <a href="#">info@fotografija-grudnik.si</a></li>
+                                        <li><span>Naslov:</span> Šmiklavž 3a, 3342 Gornji Grad, Slovenija</li>
                                     </ul>
                                 </div>
-                            </div>
-
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 col-12">
-                        <div class="row">
-
-                            <!-- Contact Availability -->
-                            <div class="col-lg-10 col-12 mb-45">
-                                <div class="contact-availability">
-                                    <h3>24/7 ANYTIME</h3>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour lebmid</p>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered </p>
-                                </div>
-                            </div>
-
-                            <!-- Contact Map -->
-                            <div class="col-lg-10 col-12">
-                                <div id="contact-map"></div>
                             </div>
 
                         </div>
