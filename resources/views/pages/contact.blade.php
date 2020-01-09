@@ -19,7 +19,7 @@
                                             {{csrf_field() }}
                                         <input type="text"  name="name" class="form-control" id="name" placeholder="Ime in Priimek" required>
                                         <input type="email"  name="email" class="form-control" id="email" placeholder="name@example.com" required>
-                                        <textarea class="form-control" id="body" rowss="5" required name="body"></textarea>
+                                        <textarea class="form-control" id="body" rowss="5" required name="body" placeholder="Sporocilo" ></textarea>
                                         <input type="submit" class="btn btn-big gold" value="Pošlji">
                                   
                                     {!! Form::close() !!}

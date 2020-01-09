@@ -25,7 +25,15 @@
 
                             <div class="portfolio-content">
                                 <h4 class="title"><a href="/galerija/{{$slika->id}}">{{$slika->title}}</a></h4>
-                                <span class="category">{{$slika->category->title}}</span>
+                                <span class="category">{{$slika->category->title}}</span><br>
+                                @if(!Auth::guest() && Auth::user()->id == $slika->user_id )
+                                <span class="category" ><a href="/galerija/{{$slika->id}}/edit"  class="btn btn-secondary btn-sm" style="color:white">Edit</a></span>
+                                <span class="category">    {!!Form::open(['action' => ['GalerijaController@destroy', $slika->id], 'method' => 'POST'])!!}
+                                    {{Form::hidden('_method', 'DELETE')}}
+                                    {{Form::submit('Delete',['class' => 'btn btn-danger btn-sm'])}}
+                                    {!!Form::close()!!} </span>
+
+                                    @endif
                             </div>
 
                         </div>

@@ -8,7 +8,7 @@ class PageController extends Controller
 { 
     public function index(){
       
-     return view('index');
+     return view('galerija.index');
   }
   public function about(){
      

@@ -8,9 +8,8 @@
                 <!-- Team Wrap -->
                 <div class="row">
                         <div  style="float:none;margin:auto;" class="col-lg-12 col-md-12 col-12 mb-30">
-
-    <h1>Dodaj sliko v galerijo</h1>
-    {!! Form::open(["action" => "GalerijaController@store", "method" => "POST",'enctype'=>'multipart/form-data']) !!}
+    <h1>Dodaj projekt</h1>
+    {!! Form::open(["action" => "ProjectController@store", "method" => "POST",'enctype'=>'multipart/form-data']) !!}
     <div class="form-group">
         {{Form::label('title','Title ')}}
         {{
@@ -22,7 +21,34 @@
         {{
             Form::textarea('body',' ',['class'=>'form-control','placeholder'=>'body'])
         }}
-    </div>     
+    </div>  
+    <div class="form-group">
+            {{Form::label('client','Client ')}}
+            {{
+                Form::text('client','',['class'=>'form-control','placeholder'=>'Client','required'])
+            }}
+        </div>   
+
+        <div class="form-group">
+                {{Form::label('service','Service ')}}
+                {{
+                    Form::text('service','',['class'=>'form-control','placeholder'=>'Service','required'])
+                }}
+            </div>  
+
+            <div class="form-group">
+                    {{Form::label('date','Date ')}}
+                    {{
+                        Form::date('date','',['class'=>'form-control','required'])
+                    }}
+                </div>  
+
+                <div class="form-group">
+                        {{Form::label('website','Website ')}}
+                        {{
+                            Form::text('website','',['class'=>'form-control','required','placeholder'=>'Website'])
+                        }}
+                    </div>     
     
     <div class="form-group">
             {{Form::file('cover_image',['required'])}}        
@@ -37,11 +63,10 @@
      
         {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}  
-     
+                        </div>
         </div>
 </div>
 
-            </div>
         </div>
 </div>
 @endsection

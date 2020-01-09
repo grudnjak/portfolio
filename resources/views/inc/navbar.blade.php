@@ -12,12 +12,9 @@
                                 <ul>
                                     <li><a href="/">HOME</a>
                                     </li>
-                                    <li>
-                                            <a href="/galerija">GALERIJA </a>
-                                        
-                                        </li>
+                                    
                                         <li>
-                                                <a href="/services">PROJEKTI</a>
+                                                <a href="/project">PROJEKTI</a>
                                         </li>
                                         <li>
                                             <a href="/about">O MENI</a>
@@ -70,9 +67,9 @@
                         <ul>
                                 <li><a href="/">HOME</a>
                                 </li>
-                                <li>
-                                        <a href="/galerija">GALERIJA </a>
-                                    
+                                
+                                    <li>
+                                            <a href="/project">PROJEKTI</a>
                                     </li>
                                     <li>
                                         <a href="/about">O MENI</a>

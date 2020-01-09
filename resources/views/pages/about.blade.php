@@ -28,18 +28,18 @@
                    <!-- About Content -->
                    <div class="about-content col-lg-8 col-12">
                         <h3 class="block-title">O MENI</h3>
-                        <p>Sem Valentin Grudnik. Študent na Naravoslovno tehniški fakulteti v Ljubljani, smer Grafika in medijska tehnika. Svojo veliko strast, ki je fotografija združujem z oblikovanjem ter izdelovanjem spletnih strani.</p>
-                        <p>Znanje iz področja računalništva ter programiranja sem pridobil na Elektro in računalniški srednji šoli v Velenju. Za sabo imamo že kar nekaj uspešno izpeljanih projektov na področju spletnega programiranja ter izdelovanja grafičnih izdelkov(brošure, katalogi, logotipi itd.) </p>
+                        <p>Sem Valentin Grudnik, študent na Naravoslovno tehniški fakulteti v Ljubljani, smer Grafična in medijska tehnika. Svojo veliko strast, ki je fotografija, združujem z oblikovanjem ter izdelovanjem spletnih strani.</p>
+                        <p>Znanje na področju računalništva ter programiranja sem pridobil na Elektro in računalniški srednji šoli v Velenju. Za sabo imam že kar nekaj uspešno izpeljanih projektov na področju spletnega programiranja ter izdelovanja grafičnih izdelkov (brošure, katalogi, logotipi itd.). </p>
                         <p>Na področju fotografije se predvsem ukvarjam z fotografiranjem portretov, lifestyle fotografij, dogodkov ter promocijsko fotografijo.</p>
                         <p>Z veseljem se prilagodim Vašim željam ter ujamem spomine, ki bodo za vedno ostali na fotografijah.</p>
-                        <p>Za termin, pošljite povpraševanje na e-pošto ali pa  <span style="font-weight:bold"><a href="/contact/"> izpolnete kontaktni obrazec.</a></span></p>
+                        <p>Za termin pošljite povpraševanje na e-pošto ali pa  <span style="font-weight:bold"><a href="/contact/"> izpolnite kontaktni obrazec.</a></span></p>
                         <!-- Personal Info -->
                         <ul class="personal-info">
                             <li><span>Telefon:</span>+386 41 675 682</li>
                             <li><span>E-pošta:</span>info@fotografija-grudnik.si</li>
                             <li><span>Instagram:</span> <a href="https://www.instagram.com/valentingrudnik/"> <i class="fa fa-instagram"></i> Valentin Grudnik</a>  <a href="https://www.instagram.com/portraits.by.valentin/"><i class="fa fa-instagram"></i> portraits.by.valentin</a> </li>
                             <br>
-                            <li><span>Available to book in other countries and languages (English).</span></li>
+                            <li><span>Available to book in other countries and languagee (English). For more information please write mail or <a  style="text-decoration: underline;"href="/contact/">submit contact form</a></span></li>
                         </ul>
                     
 

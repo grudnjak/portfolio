@@ -14,10 +14,12 @@
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/', 'PageController@index') ;
+Route::get('/', 'GalerijaController@index') ;
 Route::get('/about', 'PageController@about');
 Route::get('/services', 'PageController@services');
 Route::resource('galerija', 'GalerijaController'); 
+Route::resource('project', 'ProjectController'); 
+
 //mail
 Route::get('/contact', ['uses'=>'ContactUSController@contactUS']);
 Route::post('/contact', ['uses'=>'ContactUSController@contactUSPost','as'=>'contactus.store']);
