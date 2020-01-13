@@ -3,7 +3,7 @@ namespace App\Http\Controllers;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Http\Request;
 use App\Http\Requests;
-use App\ContactUS;
+use App\ContactUs;
 use App\Mail\mailus;
 
 class ContactUSController extends Controller
@@ -25,7 +25,7 @@ class ContactUSController extends Controller
      */
     public function index()
     {
-        $povprasevanja = ContactUS::orderBy('created_at','desc')->get();
+        $povprasevanja = ContactUs::orderBy('created_at','desc')->get();
         return view('povprasevanje.index')->with('povprasevanja',$povprasevanja);
     }
 

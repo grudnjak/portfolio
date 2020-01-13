@@ -163,7 +163,7 @@ $path = $request->file('cover_image')->storeAs('public/cover_images/',$fileNameT
     {
         
         $galerija = Galerija::find($id);
-        if(auth()->user()->id !== $galerija->user_id ){
+        if(auth()->user()->id != $galerija->user_id ){
             return redirect('/galerija ')->with('error', 'Unautharize page' );
         }
         

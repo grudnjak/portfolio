@@ -186,7 +186,7 @@ $path = $request->file('cover_image')->storeAs('public/cover_images/',$fileNameT
     public function destroy($id)
     {
         $project = Project::find($id);
-        if(auth()->user()->id !== $project->user_id ){
+        if(auth()->user()->id != $project->user_id ){
             return redirect('/project ')->with('error', 'Unautharize page' );
         }
         
